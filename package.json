@@ -1,0 +1,79 @@
+{
+  "name": "coc-gitmoji",
+  "version": "1.0.0",
+  "description": "Gitmoji source for coc.nvim",
+  "engines": {
+    "coc": ">=0.0.57"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xC0D3D00D/coc-gitmoji.git"
+  },
+  "keywords": [
+    "coc.nvim",
+    "gitmoji"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "coc.source.gitmoji.enable": {
+          "type": "boolean",
+          "default": true
+        },
+        "coc.source.gitmoji.shortcut": {
+          "type": "string",
+          "default": "T"
+        },
+        "coc.source.gitmoji.triggerCharacters": {
+          "type": "array",
+          "default": [
+            ":"
+          ],
+          "items": {
+            "type": "string"
+          }
+        },
+        "coc.source.gitmoji.priority": {
+          "type": "integer",
+          "default": 3
+        },
+        "coc.source.gitmoji.disableSyntaxes": {
+          "type": "array",
+          "default": [],
+          "items": {
+            "type": "string"
+          }
+        },
+        "coc.source.gitmoji.filetypes": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "default": [
+            "COMMIT_EDITMSG"
+          ],
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "author": "mdh.heydari@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0xC0D3D00D/coc-gitmoji/issues"
+  },
+  "homepage": "https://github.com/0xC0D3D00D/coc-gitmoji#readme",
+  "dependencies": {
+    "coc.nvim": "0.0.80"
+  }
+}
